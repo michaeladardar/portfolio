@@ -45,7 +45,13 @@ p {
 
 a {
     color:white;
-
+}
+/* Logo */
+#logo {
+    position:fixed;
+    top: 24px;
+    left: 40px;
+    font-size: 32px;
 }
 
 /* Nav */
@@ -55,6 +61,10 @@ a {
     right: 0px;
     margin: 0px;
     padding: 0px;
+}
+
+#nav a {
+    color: white;
 }
 
 #nav li {
@@ -78,4 +88,22 @@ a {
 /* Page Layout */
 .section{
     min-height: 100vh;
+}
+
+#heroText {
+    top: 50vh;
+    margin-top: 40vh;
+}
+
+#bio{
+    background-image: url('../images/bio-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.caseStudy{
+    background-color: red;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
 }

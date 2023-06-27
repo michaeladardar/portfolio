@@ -1,4 +1,6 @@
 /* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 
 /* Variables */
 
@@ -10,11 +12,17 @@ html {
 }
 
 body {
-    background-color:#b31fe5;
+    background-color:#0F1A3C;
     color: #fff;
     margin: 0;
     padding: 0;
+    font-family:'Roboto Condensed';
+    font-weight: 100;
+}
 
+body.dark{
+    background-color: #eaeaea;
+    color: #1d1d1d; 
 }
 
 
@@ -90,9 +98,25 @@ a {
     min-height: 100vh;
 }
 
+.section img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.section img:hover{
+    transform: scale(1.05);
+    opacity: 0.6;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
 #heroText {
     top: 50vh;
     margin-top: 40vh;
+}
+
+#hero {
+    padding-top: 50px;
 }
 
 #bio{
@@ -107,3 +131,67 @@ a {
     width: 100%;
     margin-bottom: 20px;
 }
+
+.card {
+    height: 400px;
+    width: 400px;
+    background-color:blue;
+    border-radius: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.card .card-image img {
+    border-radius: 25px 25px 0 0;
+}
+
+.card-image {
+    border-radius: 25px 25px 0 0;
+}
+
+.card-content {
+    border-radius: 25px 25px 0 0;
+}
+
+.card-title {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 400px;
+    color: blue;
+}
+
+
+.btn {
+    background-color:blue;
+    border-radius: 75px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 5px navy;
+}
+
+.btn:hover {
+    /* transform: rotate(180deg); */
+    background-color: blueviolet;
+    /* margin-left: 60px; */
+}
+
+
+.gimmick {
+    background-image: url('../images/hero-bg.svg');
+    background-size: cover;
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    top: calc(50vh - 400px);
+    left: calc(50vw - 400px);
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+    to {
+      transform: rotate(360deg) scale(2);
+    }
+  }

@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -24,75 +23,73 @@
 </div>
 
  <!-- Navigation -->  
-   <ul id="nav">
-    <a href="#portfolio">
-        <li>Portfolio</li>
-        </a>
-    <a href="#bio">
-        <li>Bio</li>
-        </a>
-        <a href="#cv">
-        <li>CV</li></a>
-    <a href="#contact">
-        <li>Contact</li>
-        </a>
-   </ul>
+<div id="navTrigger" onclick="toggleNav()">
+</div>
+ <div id="navWrapper">
+    <ul id="nav">
+        <a href="#portfolio" onclick="toggleNav()">
+            <li>Portfolio</li>
+            </a>
+        <a href="#bio" onclick="toggleNav()">
+            <li>Bio</li>
+            </a>
+            <a href="#cv" onclick="toggleNav()">
+            <li>CV</li></a>
+        <a href="#contact" onclick="toggleNav()">
+            <li>Contact</li>
+            </a>
+         </ul>
+   </div>
 
    <!-- this is a practice comment -->
 
-    <!-- Hero Section -->
-    <div id="hero" class="section">
-        <div id="heroText">
-        <h1 class="center aligned">Michaela Dardar</h1>
-        <h1 class="center aligned">UX/UI Designer</h1>
+     <!-- Hero Section -->
+     <div id="hero" class="section">
+        <h1 class="center-align">Michaela Dardar</h1>
+        <h2 class="center-align">UX/UI Designer</h2>
         <!-- <div class="gimmick"></div> -->
-        <a id="coloredButton" class="btn" onclick="toggleDark()">Click me!</a>
-        </div>
+        <a href="#portfolio">
+            <div class="arrow"></div>
+        </a>
     </div>
 
     <!-- Portfolio Section -->
     <div id="portfolio" class="section">
-        <h2 class="center aligned"> Portfolio</h2>
+        <h2 class="center aligned"><b>Portfolio</b></h2>
         <div class="container">
 
-            <div class="row">
-            <div class="card">
-                <div class="card-image">
-                    <img class="materialboxed" src="images/project-preview.jpg"/>
-                    <span class="card-title">
-                    <span style=color:darkmagenta> Title</span>
-               </div>
-               <div class="card-content">
-                   <p style="color:darkmagenta;">I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-               </div>
-        </div>
-             <!-- <a class="waves-effect waves-light btn">button</a>         -->
-            </div>
+                <div class="row">
+                    <div class="col s12 m8 l8">
+                        <img id="ppimage" src="images/iPhone 11 Render.png"/>
+                   </div>
+                   <div class="col s12 m4 l4">
+                    <h3>Peaceful Palm Project</h3>
+                     <p> A collaborative group website redesign for a local mobile massage business. </p>
+                     <a href="peacefulpage.html" class="ppButton"> View More </a>
+                    </div>
+                </div> 
 
-             <div class="row">
-                <div class="col s12 m8 l8">
-                   <a href="Project 1.html">
-                    <img class="materialboxed" src="images/project-preview.jpg">
-                    </a>
-                </div>
-                <div class="col s12 m4 l4">
-                    <h3> Project Title</h3>
-                    <p> Project Description</p>
+                     <div class="row">
+                        <div class="col s12 m4 l4">
+                           <h3> Government Website Redesign</h3>
+                            <p> A redesign for travel.gov to create more traffic & easier understanding for those seeking travel needs.</p>
+                        </div>
+                        <div class="col s12 m8 l8">
+                           <img src="../portfolio-demo/images/MacBook Pro 16.png">
+                       </div>
+                       </div>
+
+                       <div class="row">
+                        <div class="col s12 m8 l8">
+                           <img src="../portfolio-demo/images/iPhone 13.png">
+                       </div>
+                         <div class="col s12 m4 l4">
+                        <h3> Pawesome App</h3>
+                         <p> An app used to interconnect dog owners & nearby pet-friendly locations, creating a deeper sense of trust, community & lifetime memories with your best furry friends.</p>
+                         </div>
+                        </div>
                 </div>
             </div>
-             <div class="row">
-                 <div class="col s12 m4 l4">
-                    <h3> Project Title</h3>
-                     <p> Project Description</p>
-                 </div>
-                 <div class="col s12 m8 l8">
-                    <img class="materialboxed" src="images/project-preview.jpg">
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 
 
@@ -100,70 +97,110 @@
 
     <!-- Bio Section -->
     <div id="bio" class="section">
+        </a>
         <div class="container">
             <div class="row">
-                <div class="col s12 m6 l6">
-                    
-                    <h2 class="left-align">Bio</h2>
+                <div id="white_bg" class="col s12 m6 l6">
+                        <h2 class="left-align"><b>Bio</b></h2>
 
-                    <ul class="collapsible">
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                      </ul>
-
-                    <p>This is authentic auto-biography sharing who I am, my background, what I'm passionate about, and my strengths as a designer. I might even share a bit of my philosophy!</p>
-
-                    <p>This is authentic auto-biography sharing who I am, my background, what I'm passionate about, and my strengths as a designer. I might even share a bit of my philosophy!</p>
-
-                    <p>This is authentic auto-biography sharing who I am, my background, what I'm passionate about, and my strengths as a designer. I might even share a bit of my philosophy!</p>
+                    <h4><em>Hi there, I’m Michaela.</em></h4>
+                    <p>I am a hard working, driven person with a day-dreaming spirit. I find that I am a mixture of analytical & creative, often seeking a balance between the mind & matters of the heart. Because of this, I have been working towards a certification at University of Texas in UX/UI Design. This opportunity has allowed me to better empathize with the problems of others, all the while finding a niche for creative expression & detail-oriented research to bring ideas to life & solve the problems people may face in their user experience.</p>
                 </div>
-                <div class="col s12 m6 l6">
-                    
-                </div>
+              </div>
             </div>
         </div>
-    </div>
 
     <!-- CV Section -->
     <div id="cv" class="section">
-        <h2 class="center aligned">CV</h2>
-    </div>
+        <h2 class="center-align"><b>Resume</b></h2>
+        <div class="container">
+            <div class="row">
+                
+                        <div class="col s12 m6 l6">
+                            <h3 class="skillsHeader"> Skills </h3>
+                             <p class="skills"> 
+                                 <h4>Research</h4>
+                                 <p>Interviewing</p>
+                                 <p>Usability Testing</p>
+                           
+                
+                                 <h4>Design</h4>
+                                 <p>Sketch</p>
+                                 <p>Wireframing</p>
+                                 <p>Prototyping</p>
+                                 <p>Visual Design</p>
+                           
+                            
+                                 <h4>Development</h4>
+                                <p>HTML & CSS</p>
+                            
+                            
+                                <h4>Software</h4>
+                                 <p>Figma</p>
+                                 <p>Miro</p>
+                                 <p>Google Drive</p>
+                                 <p>Microsoft Programs</p>
+                              </p>
+                      
+                        <h3 class="left-align">Education</h3>
+                        <h4 class="left-align">Certification of UX/UI Design</h4>
+                        <p class="left-align">University of Texas (Austin)</p>
+                                <p class="left-align">February 2023-August 2023</p>
+                                <h4 class="left-align">Bachelors of Allied Health Sciences</h4>
+                                <p class="left-align">Nicholls State University  (Louisiana)</p>
+                                <p class="left-align">2013-2018</p>
+                        </div>
+                
+                        <div class="col s12 m6 l6">
+                            <h3 class="right-align">Experience</h3>
+                            <h4 class="right-align">The Peaceful Palm</h4>
+                                <p class="right-align">Project</p>
+                                <p class="right-align">May 2023-June 2023</p>
+                                <p class="right-align">-Collaborated with team members on a redesign for a mobile massage therapist company.</p>
+                                <p class="right-align">-Exhibited quick critical thinking skills while obtained data points and applying research. </p>
+                                <p class="right-align">-Understood client needs while considering the impact of design choices. </p>
+                                <p class="right-align">Implemented new ideas for a more fluid, fulfilling experience.</p>
+                
+                            <h4 class="right-align">Izumi Sushi</h4>
+                                <p class="right-align">Server</p>
+                                <p class="right-align">2022-2023</p>
+                                <p class="right-align">-Upheld professionalism and hospitality standards while in fast-paced environments. </p>
+                                <p class="right-align">-Created pleasant atmospheres for customers while working under high-pressure loads. </p>
+                                <p class="right-align">-Multi-tasked and shifted into various teamwork roles.</p>
+                
+                            <h4 class="right-align">Autism NoMore</h4>
+                                <p class="right-align">Behavioral Technician</p>
+                                <p class="right-align">2021-2022</p>
+                                <p class="right-align">-Applied observational skills to help aid in the development of children diagnosed with Autism. </p>
+                                <p class="right-align">-Collected data points while monitoring child’s behaviors.</p>
+                                <p class="right-align">-Created safe environment for the expression and redirection of new milestones.</p>
+                         </div>
+
+                        
+                         <a href id="pdfButton">
+                            Click for PDF
+                         </a>
+                        
+                            </div>
+                    </div>
+                </div>
+       
+<!-- to change column size, all numerators must equal to 12 or a number divisible by 12
+to get 3 columns, for example, you'd use col s12 m4 l4 -->
+
 
     <!-- Contact Section -->
-    <div id="contact" class="section">
-        <h2 class="center aligned">Contact</h2>
+    <div id="contact" class="center-align">
+        <div class="section">
+        <h2 class="center-align"><b>Contact</b></h2>
         <div class="container">
-        <div class="row">
-        <img src="images/contact.jpg">
-
-        <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-     <div class="modal-content">
-        <h4>Modal Header</h4>
-         <p>A bunch of text</p>
-     </div>
-     <div class="modal-footer">
-         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-     </div>
-    </div>
-          
-
-            </div>
+        <img id="circular--square" src="images/IMG_3642.jpg"/>
+        <a class="btn" onclick="toggleDark()">Copy Email To Clipboard</a>
+        </div>
         </div>
     </div>
+
+    
 
 
     <!-- JS -->
@@ -175,7 +212,7 @@
 
 
 
-<!-- Class Homework -->
+<!-- Class Homework
 <div class="section">
     <div class="container">
         <h2 class="center aligned"> This is an H2 </h2>
@@ -193,3 +230,69 @@
         </div>
     </div>
 </div>
+
+   <!-- Modal Trigger -->
+   <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+<!-- Modal Structure -->
+<!-- <div id="modal1" class="modal">
+    <div class="modal-content">
+       <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+   </div> -->
+
+   <!-- <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li> -->
+      <!-- <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+
+  <div class="row"> -->
+    <!-- <div class="card">
+        <div class="card-image">
+            <img class="materialboxed" src="images/project-preview.jpg"/>
+            <span class="card-title">
+            <span style=color:darkmagenta> Title</span>
+       </div>
+       <div class="card-content">
+           <p style="color:darkmagenta;">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+       </div>
+</div> -->
+     <!-- <a class="waves-effect waves-light btn">button</a>         -->
+    <!-- </div> --> 
+
+
+
+     <!-- <div class="row">
+                <div class="col s12 m8 l8">
+                    <img class="materialboxed" src="images/project-preview.jpg">
+                    </a>
+                </div>
+                <div class="col s12 m4 l4">
+                    <h3> Project Title</h3>
+                    <p> Project Description</p>
+                </div>
+            </div>
+             <div class="row">
+                 <div class="col s12 m4 l4">
+                    <h3> Project Title</h3>
+                     <p> Project Description</p>
+                 </div>
+                 <div class="col s12 m8 l8">
+                    <img class="materialboxed" src="images/project-preview.jpg">
+                </div>
+                </div> -->

@@ -52,3 +52,4 @@ function toggleNav() {
     document.getElementById('navWrapper').classList.toggle('active');
     document.getElementById('navTrigger').classList.toggle('active');
 }
+
